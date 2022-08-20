@@ -1,0 +1,15 @@
+.electronics_button{
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: rgb(0, 117, 207);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.meals_button:hover,
+.meals_button:active{
+    background-color: #00a2ff;
+}

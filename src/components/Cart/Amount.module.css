@@ -1,0 +1,22 @@
+.amount_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.btn_wrapper button{
+    background-color: rgb(0, 117, 207);
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 50%;
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+.btn_wrapper button:hover{
+    background-color: #00a2ff;
+}

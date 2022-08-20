@@ -1,0 +1,42 @@
+.form_control input{
+    border-radius: 6px;
+    border: none;
+    width: 70%;
+}
+.form_control label{
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.form_control:first-child{
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+.form_control{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.invalid{
+    background-color: pink;
+    border: 1px solid red;
+}
+
+.error_messedge{
+    color: red;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 720px) {
+    .form_control input{
+        width: 60%;
+    }
+    .form_control label{
+        font-size: 18px;
+    }
+}

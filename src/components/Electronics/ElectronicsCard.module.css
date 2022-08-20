@@ -1,0 +1,42 @@
+.electronicsCard_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+    margin: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.electronics_price{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+h3{
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+p{
+    margin: 0.4rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.electronics_add{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.electronics_add input{
+  margin-left: 0.75rem;
+}
+
+.electronics_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

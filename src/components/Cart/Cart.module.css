@@ -1,0 +1,57 @@
+.list{
+    max-height: 18rem;
+    overflow: scroll;
+}
+.total{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.actions{
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.close__btn{
+    background-color: #ccc;
+    color:  black;
+    margin-right: 0.75rem;
+}
+
+.close__btn:hover{
+    background-color: #00a2ff;
+    color:  white;
+}
+
+.item{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.75rem;
+    margin: 1.25rem auto;
+}
+
+.item_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 span{
+    border: 1px solid grey;
+    padding: 0.2rem 0.4rem;
+    border-radius: 6px;
+    font-weight: normal;
+    margin-left: 0.5rem;
+}
+
+
+.notification{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
