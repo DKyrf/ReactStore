@@ -22,10 +22,11 @@ const FormInput = React.forwardRef((props, ref) => {
         value,
         inputValueHandler,
         inputBlurHandler,
+        isInputValid,
         hasError,
     } = useValidator(validator)
 
-    props.errorHandler(hasError)
+    props.validityHandler(isInputValid)
 
     let formClass = hasError ? classes.invalid : ""
 

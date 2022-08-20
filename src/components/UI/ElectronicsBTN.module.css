@@ -9,7 +9,13 @@
     font-weight: bold;
 }
 
-.meals_button:hover,
-.meals_button:active{
+.electronics_button:hover,
+.electronics_button:active{
     background-color: #00a2ff;
+}
+
+.electronics_button:disabled{
+    background-color: #ccc;
+    color: #3c3c3c;
+    cursor: not-allowed;
 }

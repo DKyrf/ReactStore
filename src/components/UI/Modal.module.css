@@ -1,6 +1,6 @@
 .backdrop__wrapper{
     position: absolute;
-    height: 120%;
+    height: 200%;
     width: 100%;
     background-color: rgba(20, 20, 20, 0.391);
     z-index: 50;
@@ -16,5 +16,5 @@
     padding: 0 1rem 0.8rem;
     z-index: 51;
     left: 20%;
-    top: 20%;
+    top: 25%;
 }

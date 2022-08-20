@@ -39,8 +39,6 @@ const useValidator = (validator) => {
 
     const isInputValid = validator(inputValue.val)
 
-    console.log(inputValue.val, isInputValid);
-    console.log(inputValue.val, inputValue.isTouched);
     let hasError = !isInputValid && inputValue.isTouched
 
     const inputValueHandler = (event) => {

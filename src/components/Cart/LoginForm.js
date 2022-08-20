@@ -1,10 +1,11 @@
-import {useRef, useContext} from "react"
+import {useRef, useContext, useState} from "react"
 import ElectronicsBTN from "../UI/ElectronicsBTN"
 import UserContext from "../../store/user-context"
 import OrderContext from "../../store/order-context"
 import FormInput from "./FormInput"
 
 const LoginForm = (props) => {
+    const [isActive, setIsActive] = useState(false)
 
     const userCTX = useContext(UserContext);
     const orderCTX = useContext(OrderContext)
@@ -35,20 +36,23 @@ const LoginForm = (props) => {
         
     };
 
-    const handleError = (err) => {
-        return err
-    }
+    const handleValidity = isValid => setIsActive(isValid)
+
+    const classButton = isActive 
+    ? "" 
+    : "invalid";
+
 
     return (
 
         <form onSubmit={submitHandler}>
-            <FormInput errorHandler = {handleError} ref={userName} type="text" id="userName" content="User Name"/>
-            <FormInput errorHandler = {handleError} ref={userMail} type="text" id="email" content="Email"/>
-            <FormInput errorHandler = {handleError} ref={userCity} type="text" id="city" content="City"/>
-            <FormInput errorHandler = {handleError} ref={userAdress} type="text" id="adress" content="Adress"/>
-            <FormInput errorHandler = {handleError} ref={userPhone} type="text" id="phone" content="Phone number"/>
+            <FormInput validityHandler = {handleValidity} ref={userName} type="text" id="userName" content="User Name"/>
+            <FormInput validityHandler = {handleValidity} ref={userMail} type="text" id="email" content="Email"/>
+            <FormInput validityHandler = {handleValidity} ref={userCity} type="text" id="city" content="City"/>
+            <FormInput validityHandler = {handleValidity} ref={userAdress} type="text" id="adress" content="Adress"/>
+            <FormInput validityHandler = {handleValidity} ref={userPhone} type="text" id="phone" content="Phone number"/>
 
-            <ElectronicsBTN disabled={handleError}>MAKE ORDER</ElectronicsBTN>
+            <ElectronicsBTN disabled={!isActive} className={classButton}>MAKE ORDER</ElectronicsBTN>
 
         </form>
     )
